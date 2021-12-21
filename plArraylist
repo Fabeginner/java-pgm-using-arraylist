@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+
+public class plArraylist
+{
+    public static void main(String[] args)
+    {
+        ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+        desertIslandPlaylist.add("Made in India");
+        desertIslandPlaylist.add("Chammak challo");
+        desertIslandPlaylist.add("Despasito");
+        desertIslandPlaylist.add("Dool baje");
+        desertIslandPlaylist.add("sollu pulla");
+        desertIslandPlaylist.add("thum paas aye");
+        System.out.println(desertIslandPlaylist.size());
+
+
+        System.out.println(desertIslandPlaylist.indexOf("Despasito"));
+        System.out.println(desertIslandPlaylist.indexOf("thum paas aye"));
+        String tempA=desertIslandPlaylist.get(2);
+        String tempB=desertIslandPlaylist.get(5);
+        System.out.println(desertIslandPlaylist.set(5,tempA));
+        System.out.println(desertIslandPlaylist.set(2,tempB));
+        System.out.println(desertIslandPlaylist.indexOf(tempA));
+        System.out.println(desertIslandPlaylist.indexOf(tempB));
+    }
+}
